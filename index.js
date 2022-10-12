@@ -21,5 +21,18 @@ console.log(Math.max.apply(null, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 console.log(Math.min.apply(null, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // //This method is called the Javascript function which allows you to find the maximum number in an array.
 //3. Create a function that takes an array of numbers and returns the sum of all the numbers in the array.
-
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let sum = 0
+number.map((num) => {
+    sum += num;
+})
+console.log(sum);
+console.log(sum/2);
 // 4. Create a function that takes an array of numbers and returns the average of all the numbers in the array.
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11]
+let total = 0
+nums.map((num) => {
+    total += num;
+})
+console.log(total);
+console.log(total/2);
