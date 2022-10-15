@@ -74,6 +74,17 @@ const sumOfNumbersDivisibleByFive = num4.map(function(item) {
 console.log(totalOfNumbersDivisibleByFive);
 
 // 8. Create a function that takes an array of strings and returns the longest string in the array.
+const fruits = ['apple', 'orange', 'banana', 'pawpawpaw', 'cherry'];
+let longestFruit = " ";
+
+for (const fruit of fruits) {
+    if (fruit > longestFruit) {
+        longestFruit = fruit
+        
+    }
+}
+console.log(longestFruit);
+
 // 9. Create a function that takes an array of strings and returns the shortest string in the array.
 
 // 10. Create a function that takes an array of numbers and filters out all the odd numbers in the array.
