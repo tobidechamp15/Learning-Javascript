@@ -86,6 +86,11 @@ for (const fruit of fruits) {
 console.log(longestFruit);
 
 // 9. Create a function that takes an array of strings and returns the shortest string in the array.
+let boys = ['John', 'Phillip', 'Sam', 'Peter'];
+let min = Math.min.apply(Math, boys.map(function(str) {
+    return str.length; 
+}));
+console.log(min);
 
 // 10. Create a function that takes an array of numbers and filters out all the odd numbers in the array.
 const num5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
