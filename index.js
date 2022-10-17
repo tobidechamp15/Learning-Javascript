@@ -77,12 +77,19 @@ console.log(totalOfNumbersDivisibleByFive);
 const fruits = ['apple', 'orange', 'banana', 'pawpawpaw', 'cherry'];
 let longestFruit = " ";
 
-for (const fruit of fruits) {
-    if (fruit > longestFruit) {
-        longestFruit = fruit
+// for (const fruit of fruits) {
+//     if (fruit > longestFruit) {
+//         longestFruit = fruit
+        
+//     }
+// }
+fruits.filter(function (value) {
+    if (value > longestFruit) {
+        longestFruit=value
         
     }
-}
+})
+
 console.log(longestFruit);
 
 // 9. Create a function that takes an array of strings and returns the shortest string in the array.
