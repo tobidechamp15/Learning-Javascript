@@ -12,7 +12,7 @@
 // 11. Create a function that takes an array of numbers and filters out all the even numbers in the array.
 // 12. Create a function that takes an array of strings and returns the array with all the strings capitalized.
 
-//No. 1
+
 // 1. Create a function that takes an array of numbers and returns the max number in the array.
 console.log(Math.max.apply(null, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // //This method is called the Javascript function which allows you to find the maximum number in an array.
