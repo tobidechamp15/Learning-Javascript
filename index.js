@@ -17,15 +17,15 @@
 function arrayMaxNumber(array) {
     return Math.max.apply(null, array);
 }
-arrayMaxNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+arrayMaxNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 // //This method is called the Javascript function which allows you to find the maximum number in an array.
 
 //2. Create a function that takes an array of numbers and returns the min number in the array.
 
 function arrayMinNumber(array) {
-    return Math.min.apply(null, array)
+    return Math.min.apply(null, array);
 }
-arrayMinNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+arrayMinNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 // //This method is called the Javascript function which allows you to find the maximum number in an array.
 //3. Create a function that takes an array of numbers and returns the sum of all the numbers in the array.
 let sumOfNumbers = 0;
@@ -33,23 +33,22 @@ function sumOfArray(array) {
     array.map(function (item) {
         sumOfNumbers += item;
     });
-    return sumOfNumbers
+    return sumOfNumbers;
 }
 sumOfArray([1, 4, 0, 9, -3]);
-
 
 // 4. Create a function that takes an array of numbers and returns the average of all the numbers in the array.
 
 function aveOfNumbers(array) {
-    let sum = 0
+    let sum = 0;
     array.forEach(function (items) {
         sum += items;
-    })
+    });
 
     return sum / 2;
 }
 
-aveOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+aveOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 //5. Create a function that takes an array of numbers and returns the sum of all the even numbers in the array.
 
 function sumEven(array) {
@@ -143,16 +142,26 @@ function longestFruitFnc(array) {
 longestFruitFnc(["apple", "orange", "banana", "pawpawpaw", "cherry"]);
 
 // 9. Create a function that takes an array of strings and returns the shortest string in the array.
-let boys = ["John", "Phillip", "Sam", "Peter"];
-let min = St.min.apply(
-    Math,
-    boys.map(function (str) {
-        console.log(str.length);
-        return str.length;
-    })
-);
+// let boys = ["John", "Phillip", "Sam", "Peter"];
+// let min = St.min.apply(
+//     Math,
+//     boys.map(function (str) {
+//         console.log(str.length);
+//         return str.length;
+//     })
+// );
 
-
+function shortestStringFnc(array) {
+    let shortest = " ";
+    array.forEach(function (value) {
+        if (value < shortest) {
+            shortest = value;
+        }
+        console.log("shortest", shortest);
+        return shortest;
+    });
+}
+shortestStringFnc(["apple", "orange", "banana", "pawpawpaw", "cherry"]);
 //console.log(min);
 
 // 10. Create a function that takes an array of numbers and filters out all the odd numbers in the array.
@@ -172,7 +181,6 @@ function oddOfNumbers(array) {
             return values;
         }
     });
-    
 }
 oddOfNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 // const oddNumbers = num5.filter(function (numbers) {
